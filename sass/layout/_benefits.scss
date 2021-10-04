@@ -1,6 +1,19 @@
 .benefits__item {
-  @include grid__item(4);
-  max-width: 270px;
+  max-width: 450px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include grid__item(2);
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid__item(4);
+    max-width: 270px;
+  }
 }
 
 .benefits__title {
@@ -30,9 +43,16 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-
   background-color: $secondary-background-color;
   border-radius: 4px;
+  width: 450px;
+  height: 120px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }

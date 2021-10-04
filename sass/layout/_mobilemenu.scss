@@ -20,7 +20,11 @@
   border: none;
   background-color: transparent;
   color: $title-text-color;
-  &hover {
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 
@@ -37,6 +41,14 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  color: $title-text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -73,17 +85,14 @@
 }
 
 .mobile-menu__icon {
-  fill: $title-text-color;
-
-  .header__open-menu-button:hover &,
-  .header__open-menu-button:focus &,
-  .header__close-menu-button:hover &,
-  .header__close-menu-button:focus & {
-    fill: $accent-color;
-  }
+  fill: currentColor;
 }
 
-%header-link {
+.mobile-menu__pages-link {
+  display: block;
+  font-size: 40px;
+  line-height: 1.17;
+  color: $title-text-color;
   font-weight: 500;
   letter-spacing: 0.02em;
 
@@ -93,14 +102,6 @@
   &:focus {
     color: $accent-color;
   }
-}
-
-.mobile-menu__pages-link {
-  @extend %header-link;
-  display: block;
-  font-size: 40px;
-  line-height: 1.17;
-  color: $title-text-color;
 }
 
 .mobile-menu__site-nav {

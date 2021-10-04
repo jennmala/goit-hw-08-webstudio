@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <!-- <header>
+    <header>
       <div class="header container">
         <nav class="header__logo-nav">
           <a class="logo header__logo link" lang="en" href="./index.html">
@@ -58,9 +58,7 @@
             </a>
           </li>
         </ul>
-      </div> -->
-
-
+      </div>
 
       <div class="mobile-menu container">
         <div class="mobile-menu__nav">
@@ -89,7 +87,10 @@
           class="mobile-menu__container js-menu-container"
           id="mobile-menu-container"
         >
-          <button class="mobile-menu__close-menu-button js-close-menu" type="button">
+          <button
+            class="mobile-menu__close-menu-button js-close-menu"
+            type="button"
+          >
             <svg
               class="mobile-menu__icon"
               width="40px"
@@ -102,7 +103,9 @@
           <nav>
             <ul class="mobile-menu__site-nav list">
               <li class="list-item">
-                <a class="mobile-menu__pages-link link mobile-menu__current" href="./index.html"
+                <a
+                  class="mobile-menu__pages-link link mobile-menu__current"
+                  href="./index.html"
                   >Студия</a
                 >
               </li>
@@ -138,24 +141,16 @@
             </ul>
             <ul class="mobile-menu__socials-list list">
               <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link link" href=""
-                  >Instagram</a
-                >
+                <a class="mobile-menu__socials-link link" href="">Instagram</a>
               </li>
               <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link link" href=""
-                  >Twitter</a
-                >
+                <a class="mobile-menu__socials-link link" href="">Twitter</a>
               </li>
               <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link link" href=""
-                  >Facebook</a
-                >
+                <a class="mobile-menu__socials-link link" href="">Facebook</a>
               </li>
               <li class="header__socials-mobile-menu-item">
-                <a class="mobile-menu__socials-link link" href=""
-                  >LinkedIn</a
-                >
+                <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -285,17 +280,36 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="grid list">
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/team/team-card-1.jpg"
-                alt="Сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/team/team-card-1-270-1x.jpg 1x,
+                    ./images/team/team-card-1-270-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-1-354-1x.jpg 1x,
+                    ./images/team/team-card-1-354-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-1-450-1x.jpg 1x,
+                    ./images/team/team-card-1-450-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-card-1-270-1x.jpg"
+                  alt="Сотрудник"
+                />
+              </picture>
               <div class="team__card-content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__function" lang="en">Product Designer</p>
-                <ul class="socials list">
+                <ul class="list socials">
                   <li class="socials__item">
                     <a class="socials__link link" href="">
                       <svg class="socials__icon">
@@ -337,13 +351,32 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/team/team-card-2.jpg"
-                alt="Сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/team/team-card-2-270-1x.jpg 1x,
+                    ./images/team/team-card-2-270-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-2-354-1x.jpg 1x,
+                    ./images/team/team-card-2-354-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-2-450-1x.jpg 1x,
+                    ./images/team/team-card-2-450-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-card-2-270-1x.jpg"
+                  alt="Сотрудник"
+                />
+              </picture>
               <div class="team__card-content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__function" lang="en">Frontend Developer</p>
@@ -388,13 +421,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/team/team-card-3.jpg"
-                alt="Сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/team/team-card-3-270-1x.jpg 1x,
+                    ./images/team/team-card-3-270-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-3-354-1x.jpg 1x,
+                    ./images/team/team-card-3-354-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-3-450-1x.jpg 1x,
+                    ./images/team/team-card-3-450-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-card-3-270-1x.jpg"
+                  alt="Сотрудник"
+                />
+              </picture>
               <div class="team__card-content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__function" lang="en">Marketing</p>
@@ -439,13 +491,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/team/team-card-4.jpg"
-                alt="Сотрудник"
-                width="270"
-                height="260"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/team/team-card-4-270-1x.jpg 1x,
+                    ./images/team/team-card-4-270-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-4-354-1x.jpg 1x,
+                    ./images/team/team-card-4-354-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-4-450-1x.jpg 1x,
+                    ./images/team/team-card-4-450-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-card-4-270-1x.jpg"
+                  alt="Сотрудник"
+                />
+              </picture>
               <div class="team__card-content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__function" lang="en">UI Designer</p>
