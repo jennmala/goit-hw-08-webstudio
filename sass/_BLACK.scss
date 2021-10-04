@@ -1,15 +1,5 @@
 // header
 
-.header {
-  display: flex;
-  align-items: center;
-}
-
-.header__logo-nav {
-  display: flex;
-  align-items: center;
-}
-
 .header__contact-list {
   display: flex;
   margin-left: auto;
@@ -17,3 +7,13 @@
     margin-right: 50px;
   }
 }
+
+// @media screen and (min-width: 768px) {
+//   display: flex;
+//   margin-left: auto;
+// }
+
+// margin-left: auto;
+// .list-item:not(:last-child) {
+//   margin-right: 50px;
+// }
