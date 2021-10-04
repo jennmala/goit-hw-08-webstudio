@@ -1,0 +1,19 @@
+// header
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__contact-list {
+  display: flex;
+  margin-left: auto;
+  .list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}

@@ -1,0 +1,114 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-background-color;
+}
+
+.footer {
+  display: flex;
+  align-items: start;
+}
+
+.footer__logo-part {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer__logo {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+%footer-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__location {
+  @extend %footer-link;
+  color: #ffffff;
+}
+
+.footer__contact {
+  @extend %footer-link;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__socials-part {
+  margin-top: 12px;
+}
+
+.footer__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__social-link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__form {
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+.footer__form-label {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer__form-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__button {
+  display: inline-flex;
+}
+
+.footer__form-icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
