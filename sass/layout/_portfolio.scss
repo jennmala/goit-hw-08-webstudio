@@ -1,20 +1,43 @@
 .portfolio__radiobutton-list {
   display: flex;
-  justify-content: center;
+
   margin-bottom: 50px;
 
   .list-item:not(:last-child) {
     margin-right: 8px;
   }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portfolio__item {
-  @include grid__item(3);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @include grid__item(2);
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid__item(3);
+    max-width: 370px;
+  }
 }
 
 .portfolio__title {
   margin-top: 0;
   margin-bottom: 4px;
+  overflow-wrap: break-word;
 
   color: $title-text-color;
   font-weight: 700;

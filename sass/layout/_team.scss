@@ -24,7 +24,10 @@
 }
 
 .team__card-content {
-  padding: 30px 122px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     padding: 30px 74px;
@@ -58,17 +61,17 @@
   letter-spacing: 0.03em;
 }
 
-.team__image {
-  max-width: 450px;
-  height: auto;
+// .team__image {
+//   max-width: 450px;
+//   height: auto;
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 374px;
-  }
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//     height: 374px;
+//   }
 
-  @media screen and (min-width: 1199px) {
-    width: 270px;
-    height: 260px;
-  }
-}
+//   @media screen and (min-width: 1199px) {
+//     width: 270px;
+//     height: 260px;
+//   }
+// }
