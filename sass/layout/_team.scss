@@ -11,15 +11,18 @@
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
+      max-width: 450px;
     }
   }
 
   @media screen and (min-width: 768px) {
     @include grid__item(2);
+    max-width: 354px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     @include grid__item(4);
+    max-width: 270px;
   }
 }
 
@@ -33,7 +36,7 @@
     padding: 30px 74px;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     padding: 30px 32px;
   }
 }
@@ -60,18 +63,3 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
-// .team__image {
-//   max-width: 450px;
-//   height: auto;
-
-//   @media screen and (min-width: 768px) {
-//     width: 354px;
-//     height: 374px;
-//   }
-
-//   @media screen and (min-width: 1199px) {
-//     width: 270px;
-//     height: 260px;
-//   }
-// }

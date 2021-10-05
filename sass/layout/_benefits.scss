@@ -28,6 +28,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .benefits__text {
@@ -48,7 +52,7 @@
   background-color: $secondary-background-color;
   border-radius: 4px;
   max-width: 450px;
-  height: auto;
+  height: 120px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
