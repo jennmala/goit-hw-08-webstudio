@@ -10,7 +10,9 @@
   overflow-y: scroll;
 
   @media screen and (max-width: 767px) {
-    padding: 93px 15px;
+    padding-top: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -19,7 +21,13 @@
   pointer-events: none;
 
   .modal {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.1);
+  }
+
+  @media screen and (min-width: 480px) {
+    .modal {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
   }
 }
 
@@ -39,13 +47,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -30%) scale(1);
     width: 450px;
     min-height: 581px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 530px;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

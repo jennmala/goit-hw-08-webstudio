@@ -1301,7 +1301,9 @@ footer {
 
 @media screen and (max-width: 767px) {
   .backdrop {
-    padding: 93px 15px;
+    padding-top: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1311,7 +1313,13 @@ footer {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .modal {
@@ -1329,7 +1337,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -30%) scale(1);
     width: 450px;
     min-height: 581px;
   }
@@ -1338,6 +1346,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 530px;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
