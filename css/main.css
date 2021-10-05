@@ -581,10 +581,13 @@ body {
   color: #2196f3;
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -1454,7 +1457,7 @@ footer {
   .portfolio__radiobutton-list {
     flex-wrap: wrap;
   }
-  .portfolio__radiobutton-list .list-item:nth-child(1) {
+  .portfolio__radiobutton-list .list-item:not(:last-child) {
     margin-bottom: 15px;
   }
 }
